@@ -87,6 +87,11 @@
   color: white;
   font-weight: bold;
 }
+.child2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /* option {
   display: none;
 }
@@ -217,39 +222,53 @@
     text-align: left;
   } */
 }
-
+ 
+@media screen and (max-width: 600px){
+  
+}
 .row-3 {
   background-color: #590dff;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  min-height: 300px;
+  
 }
 .row-31 {
   font-size: 50px;
   color: white;
-  padding: 100px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
 }
 .row-32 {
   border-radius: 20px;
   background-color: white;
-  margin: 50px;
+ 
 }
 .row-32 input {
   border-radius: 25px;
   width: 400px;
   padding: 10px;
+  border: none;
   font-size: 20px;
+}
+.row-32 input:focus{
+  outline: none;
 }
 .row-33 {
   background-color: black;
   color: white;
-  padding: 15px;
+  margin: 10px;
   font-weight: bold;
   width: 150px;
   text-align: center;
   border-radius: 20px;
-  margin: 20px;
+  padding: 15px;
+  
 }
 .row-33:hover {
   background-color: rgb(62, 211, 94);
@@ -333,6 +352,11 @@
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
+  .child2{
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
   .image{
     margin-left:0px;
   }
@@ -356,6 +380,7 @@
   }
   .row-32 input {
     width: 300px;
+    border: none;
   }
   .row-31{
     text-align: center;
